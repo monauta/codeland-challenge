@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>はげましくん</title>
+    <link rel="stylesheet" href="./chale.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="app">
+        <div id="start-screen">
+            <div class="first-display">
+                <h1 class="font">はげましくん</h1>
+                <button id="start-button" class="start-button">start</button>
+            </div>
+        </div>
+
+        <div id="select-screen" class="mode-display" style="display: none;">
+            <h2 class="font">モードを<br>えらんでね</h2>
+            <div>
+                <button id="kind-button" class="kind-select-button">やさしめ</button>
+                <button id="strict-button" class="strict-select-button">きびしめ</button>
+            </div>
+        </div>
+
+        <div id="kind1-screen" class=kind-display1" style="display: none;">
+            <button id="back-to-select" class="kind-back">戻る</button>
+            <div class="kind-oya">
+                <div class="kind-gacha-font">やさしめモード</div>
+                <div class="oya-sentaku">
+                    <img class="pic" src="image-removebg-preview.png" alt="">
+                    <div>
+                        <div class="kind-speak">今日はどうしたの？</div>
+                        <button id="kind-gacha" class="kind-button">一回引く</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="kind2-screen" class="jentle-display2" style="display: none;">
+            <button id="back-to-kind" class="kind-back">戻る</button>
+            <div class="kind-gacha-font">やさしめモード</div>
+            <div class="oya-sentaku">
+                <img class="pic" src="image-removebg-preview.png" alt="">
+                <div>
+                    <div class="kind-speak" id="kind-message">あなたは一人じゃないよ</div>
+                    <button id="kind-gacha-more" class="kind-button">もう一回</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="strict1-screen" class="strict-display1" style="display: none;">
+            <button id="back-to-select2" class="strict-back">戻る</button>
+            <div class="strict-gacha-font">きびしめモード</div>
+            <div class="oya-sentaku">
+                <img class="pic" src="image-removebg-preview.png" alt="">
+                <div>
+                    <div class="strict-speak">今日はどうしたの？</div>
+                    <button id="strict-gacha" class="strict-button">一回引く</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="strict2-screen" class="strict-display2" style="display: none;">
+            <button id="back-to-strict" class="strict-back">戻る</button>
+            <div class="strict-gacha-font">きびしめモード</div>
+            <div class="oya-sentaku">
+                <img class="pic" src="image-removebg-preview.png" alt="">
+                <div>
+                    <div class="strict-speak" id="strict-message">あなたは一人じゃないよ</div>
+                    <button id="strict-gacha-more" class="strict-button">もう一回</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./chale.js"></script>
+</body>
+
+</html>
