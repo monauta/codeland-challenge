@@ -1,7 +1,14 @@
 @media screen and (max-width:960px) {
+    button,
+    button * {
+        color: black !important;     /* 文字色を強制で黒にする */
+        text-decoration: none !important; /* 下線がつく場合も消す */
+    }
+   
     .sm-only {
         display: none;
     }
+
     body {
         background-color: aliceblue;
         display: flex;
@@ -68,6 +75,24 @@
         order: 3;
     }
 
+    .kind-select-button {
+        font-size: 30px;
+        margin: 5px;
+        border-radius: 15px;
+        background-color: rgb(113, 255, 255);
+        font-family: 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', sans-serif;
+        order: 3;
+    }
+
+    .strict-select-button {
+        font-size: 30px;
+        margin: 5px;
+        border-radius: 15px;
+        background-color: rgb(254, 74, 74);
+        font-family: 'ヒラギノ丸ゴ ProN', 'Hiragino Maru Gothic ProN', sans-serif;
+        order: 3;
+    }
+
     .kind-back {
         position: absolute;
         top: 20px;
@@ -126,7 +151,7 @@
         align-items: center;
     }
 
-    .oya-sentaku > div {
+    .oya-sentaku>div {
         display: contents;
     }
 
@@ -142,6 +167,7 @@
     }
 
     .kind-speak {
+        color: black;
         font-size: 25px;
         position: relative;
         margin: 5px 0 0 50px;
@@ -169,6 +195,7 @@
 
 
     .strict-speak {
+        color: black;
         margin: 40px;
         font-size: 25px;
         position: relative;
